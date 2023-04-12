@@ -10,14 +10,91 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>Photos </h1>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">Accueil</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" target="_blank" href="https://www.exoloisirs.com/fr/content/exo-01-la-rena">EXO 01</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvas-reclamations" role="button" aria-controls="#offcanvas-reclamations">Réclamations</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"data-bs-toggle="offcanvas" href="#offcanvas-contact" role="button" aria-controls="offcanvas-contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="bandeau">
+        <h1>Galerie photos</h1>
+    </section>
     <!-- https://drive.google.com/drive/folders/125tDFu6FXTvH782lTEPYFQHvl38g_1yB?usp=share_link
     https://drive.google.com/drive/folders/1bPWmOkoICtd2ykNBHv_73sAlMQLYywGJ?usp=share_link -->
     <!-- https://stackoverflow.com/questions/20681974/how-to-embed-a-google-drive-folder-in-a-web-page -->
     <!-- https://medium.com/@thesumitsingh/how-to-embed-google-drive-folder-files-with-1-line-of-code-e445af55d8fd -->
     <!-- <iframe src="https://googledriveembedder.collegefam.com/?key=AIzaSyD4P-GKGxHLyLlKgxN9szDv7Izthwfjq18&folderid=125tDFu6FXTvH782lTEPYFQHvl38g_1yB#grid" style="border:none;" width="1000px" height="800px"></iframe> -->
-    <iframe src="https://drive.google.com/embeddedfolderview?id=1bPWmOkoICtd2ykNBHv_73sAlMQLYywGJ&resourcekey=AIzaSyD4P-GKGxHLyLlKgxN9szDv7Izthwfjq18#grid" style="width:100%; height:600px; border:0;"></iframe>
+    <!-- <iframe src="https://drive.google.com/embeddedfolderview?id=1bPWmOkoICtd2ykNBHv_73sAlMQLYywGJ&resourcekey=AIzaSyD4P-GKGxHLyLlKgxN9szDv7Izthwfjq18#grid" style="width:100%; height:600px; border:0;"></iframe> -->
+    <section id="galerie">
+        <div class="row justify-content-center mx-0">
+            <div class="card col-3">
+                <img src="./img/dj-démoniack-reouverture-v3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">08 Avril 2023</h2>
+                  <p class="card-text">Photos à l'occasion de la réouverture du wakeparc d'EXO 01</p>
+                  <a href="https://drive.google.com/drive/u/2/folders/125tDFu6FXTvH782lTEPYFQHvl38g_1yB" target="_blank" class="btn btn-primary">Découvrir <br> <small>(Lien Google Drive)</small></a>
+                </div>
+              </div>
+        </div>
+    </section>
+    <footer>
+        <p>Photos réalisées avec passion dans le but de promouvoir les bons moments passés au wakeparc d'EXO 01 à Lent.</p>
+        <p>Ce site ne dépose aucun cookie - Tous droits réservés</p>
+    </footer>
+    <div class="offcanvas offcanvas-bottom show text-bg-dark" style="height: 40vh;" tabindex="-1" id="offcanvas-contact" aria-labelledby="offcanvas-contact">
+        <div class="offcanvas-header">
+          <h3 class="offcanvas-title" id="offcanvas-contact">Contact</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            Pour contacter le développeur du site : <br>
+            <ul>
+                <li>envoyer un mail à milan.forrat@gmail.com</li>
+            </ul>
+            <br><br>
+            Pour contacter la photographe : <br>
+            <ul>
+                <li>envoyer un mail à laure01.photos@gmail.com</li>
+            </ul>
+            <br><br>
+            Pour contacter DJ Démoniack : <br>
+            <ul>
+                <li>envoyer un mail à milan.forrat@gmail.com</li>
+            </ul>
+        </div>
+      </div>
+    <!-- offcanvas 2 -->
+    <div class="offcanvas offcanvas-bottom show text-bg-dark" style="height: 40vh;" tabindex="-1" id="offcanvas-reclamations" aria-labelledby="offcanvas-reclamations">
+        <div class="offcanvas-header">
+          <h3 class="offcanvas-title" id="offcanvas-reclamations">Réclamations</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            En cas de réclamation, merci de bien vouloir : <br><br>
+            <ol>
+                <li>communiquer le numéro de photo à retirer</li>
+                <li>rédiger un message courtois </li>
+                <li>l’envoyer par  mail à milan.forrat@gmail.com</li>
+            </ol>
+            Merci.
+        </div>
+      </div>
     <script src="./BS5.2/js/bootstrap.bundle.min.js" type="text/javascript"></script>
-
+    <script src="./script.js" type="text/javascript"></script>
 </body>
 </html>
