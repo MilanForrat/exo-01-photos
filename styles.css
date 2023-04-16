@@ -11,6 +11,7 @@ body{
 }
 .card{
     text-align: center;
+    color: rgb(110, 128, 145);
     transition: 0.5s;
     background-color:rgb(48, 59, 70);
     background-color: rgb(21, 33, 46);
@@ -51,6 +52,13 @@ footer{
     justify-content: end;
     align-items: center;
 }
-footer p{
-
+@media(max-width:680px){
+    footer{
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        text-align: center;
+    }
 }
