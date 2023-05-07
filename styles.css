@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
 body{
     background-color: rgb(22, 22, 22);
     color: rgb(110, 128, 145);
@@ -9,6 +10,11 @@ h1{
     justify-content: center;
     align-items: center;
     margin-top: 45px;
+    text-align: center;
+    font-family: 'Ultra', serif;
+}
+h2{
+    font-family: 'Ultra', serif;
 }
 .navbar{
     background-color: rgba(21, 33, 46, 0.972);
