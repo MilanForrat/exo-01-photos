@@ -16,6 +16,17 @@ h1{
 h2{
     font-family: 'Ultra', serif;
 }
+#pre-text{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+
+}
+#pre-text p{
+    text-align: center;
+    width: 65%;
+    font-style: italic;
+}
 .navbar{
     background-color: rgba(21, 33, 46, 0.972);
 }
@@ -110,15 +121,19 @@ footer{
 
 @media(max-width:680px){
     footer{
-        height: 250px;
+        height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: end;
         align-items: center;
         text-align: center;
-        margin: 0 20px;
+        margin: 50px 20px;
     }
     .card{
         margin: 25px 0;
+    }
+    #pre-text p{
+        text-align: justify;
+        width: 80%;
     }
 }
