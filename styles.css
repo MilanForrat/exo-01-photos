@@ -72,11 +72,22 @@ h2{
     padding-left: 20px;
 }
 footer{
-    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: center;
+    margin-top: 50px;
+}
+footer #coffee{
+    font-style: italic;
+    padding-bottom:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer #coffee img{
+    margin:18px;
 }
 /* css animation link */
 .two-lines{
@@ -121,13 +132,12 @@ footer{
 
 @media(max-width:680px){
     footer{
-        height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: end;
         align-items: center;
         text-align: center;
-        margin: 50px 20px;
+        margin: 30px 20px;
     }
     .card{
         margin: 25px 0;
