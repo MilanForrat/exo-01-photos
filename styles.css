@@ -85,10 +85,17 @@ footer #coffee{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 footer #coffee img{
     margin:18px;
 }
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: none;
+    }
 /* css animation link */
 .two-lines{
     text-decoration: none;
@@ -145,5 +152,8 @@ footer #coffee img{
     #pre-text p{
         text-align: justify;
         width: 80%;
+    }
+    #btn-back-to-top{
+        display: none;
     }
 }
